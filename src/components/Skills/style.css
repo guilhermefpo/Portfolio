@@ -1,0 +1,17 @@
+.habilidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  gap: 10px;
+  padding: 10px;
+  transition: scale 0.3s;
+}
+
+.habilidade:hover {
+    scale: 105%;
+}
+

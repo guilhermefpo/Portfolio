@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  flex-direction: column; /* 👈 ISSO é o principal */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* espaço entre os itens */
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* espaço ENTRE os ícones */
+  font-size: 28px;
+  transition: scale 2px;
+}
+
+.social-links a {
+  color: #38bdf8;          /* branco (exemplo) */
+
+}
+
+.social-links a:hover {
+    scale: 105%;
+}
