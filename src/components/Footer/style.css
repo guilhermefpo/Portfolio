@@ -1,21 +1,38 @@
+.botao-contato {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: scale 0.3s ease;
+}
+
+.botao-contato:hover {
+  scale: 105%;
+}
+
+
 footer {
   display: flex;
-  flex-direction: column; /* 👈 ISSO é o principal */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
-  gap: 10px; /* espaço entre os itens */
+  gap: 10px; 
   padding: 20px;
 }
 
 .social-links {
   display: flex;
-  gap: 15px; /* espaço ENTRE os ícones */
+  gap: 15px; 
   font-size: 28px;
   transition: scale 2px;
 }
 
 .social-links a {
-  color: #38bdf8;          /* branco (exemplo) */
+  color: #38bdf8;          
 
 }
 

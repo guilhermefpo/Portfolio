@@ -1,42 +1,55 @@
-import './style.css'
+import { useState } from "react";
+import './style.css';
 
 function Footer() {
+  const [contatosVisiveis, setContatosVisiveis] = useState(false);
+
+  function mostrarContatos() {
+    setContatosVisiveis(!contatosVisiveis); 
+  }
+
   return (
-    <footer>
-      <h2>Contato</h2>
+    <>
+      <input type="button" value="Contato" onClick={mostrarContatos} className="botao-contato" />
 
-      <p>
-        <i className="fa-solid fa-envelope"></i>
-        {' '}
-        gfernandoportelaoliveira@gmail.com
-      </p>
+      {/* Renderização condicional do Footer */}
+      {contatosVisiveis && (
+        <footer>
+          <h2>Contato</h2>
 
-      <div className="social-links mt-2">
-        <a
-          href="https://github.com/guilhermefpo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-github"></i>
-        </a>
+          <p>
+            <i className="fa-solid fa-envelope"></i>{' '}
+            gfernandoportelaoliveira@gmail.com
+          </p>
 
-        <a
-          href="https://www.linkedin.com/in/guilherme-fernando-portela-de-oliveira"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
+          <div className="social-links mt-2">
+            <a
+              href="https://github.com/guilhermefpo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
 
-        <a
-          href="https://www.instagram.com/gui_fernando12"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-instagram"></i>
-        </a>
-      </div>
-    </footer>
+            <a
+              href="https://www.linkedin.com/in/guilherme-fernando-portela-de-oliveira"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/gui_fernando12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </footer>
+      )}
+    </>
   );
 }
 

@@ -7,8 +7,7 @@ import ProjetoCard from './components/ProjetoCard/ProjetoCard'
 import Footer from './components/Footer/Footer'
 import Skills from './components/Skills/Skills'
 
-function App() {
-  
+function App() { 
   const projetos = [
   {
     titulo: "Projeto API",
