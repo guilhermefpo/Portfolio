@@ -5,6 +5,12 @@
     padding: 30px 30px;
 }  
 
+.flex-conteiner > h1 {
+    background: linear-gradient(to right, blue, aqua);
+    background-clip: text;
+    color: transparent;
+}
+
 nav > a {
     display: inline-block;
     color: aqua;

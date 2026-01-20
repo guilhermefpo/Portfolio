@@ -1,9 +1,25 @@
 import './style.css'
+import { useEffect, useState } from 'react';
 
 function Header() {
+    const text = "Guilherme Fernando"
+    const [typedText, setTypedText] = useState("")
+    const [index, setIndex] = useState(0)
+
+    useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setTypedText((prev) => prev + text.charAt(index))
+        setIndex(index + 1)
+      }, 120)
+
+      return () => clearTimeout(timeout)
+    }
+  }, [index, text])
+
     return(
         <header className='flex-conteiner'>
-            <h1>Guilherme Fernando</h1>
+            <h1>{typedText}</h1>
             <p>Estudante de Desenvolvimento de Software Multiplataforma</p>
             <nav>
              <a href="/curriculoGuilherme.pdf" className="curriculo" id="curriculo" target="_blank" rel="noopener noreferrer">Currículo</a>

@@ -12,7 +12,7 @@ function App() {
   const projetos = [
   {
     titulo: "Projeto API",
-    descricao: "Super projeto API em grupo, fiquei responsável ",
+    descricao: "Super projeto API em grupo. ",
     imagem: "./imagensProjetos/Api.jpeg",
     url: "https://github.com/guilhermefpo/CodeWave"
   },
