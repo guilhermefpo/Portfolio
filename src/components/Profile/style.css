@@ -20,3 +20,15 @@
 .perfil > img:hover {
     transform: scale(1.05);
 }
+
+.perfil-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.perfil-texto > h2 {
+    background: linear-gradient(to right, blue, aqua);
+    background-clip: text;
+    color: transparent;
+}
