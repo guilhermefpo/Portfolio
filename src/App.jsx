@@ -62,8 +62,9 @@ const skills = [
     <>
       <Header />
       <Profile />
-
-      <section className='skills'>
+      
+      <main className='conteudo'>
+      <section className='skills' id='skills'>
         <h2>Skills</h2>
         <div className='skill-lista'>
            {skills.map((skill, index) => (
@@ -76,7 +77,7 @@ const skills = [
         </div>
         </section>
 
-        <section className="projetos">
+        <section className="projetos" id='projetos'>
       <h2>Projetos</h2>
 
       <div className="projetos-lista">
@@ -90,12 +91,12 @@ const skills = [
           />
         ))}
       </div>
-    </section>
-  
-  
+    </section>  
 
-
-      <Footer />
+   <section id='contato' className='section'>
+        <Footer />
+   </section>  
+      </main>
     </>
   )
 }
