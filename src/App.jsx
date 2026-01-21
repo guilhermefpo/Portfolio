@@ -63,12 +63,11 @@ const skills = [
       <Header />
       <Profile />
       
-      <main className='conteudo'>
       <section className='skills' id='skills'>
         <h2>Skills</h2>
         <div className='skill-lista'>
            {skills.map((skill, index) => (
-          <Skills
+          <Skills 
             key={index}
             devicon={skill.devicon}
             skill={skill.skill}
@@ -96,7 +95,7 @@ const skills = [
    <section id='contato' className='section'>
         <Footer />
    </section>  
-      </main>
+     
     </>
   )
 }

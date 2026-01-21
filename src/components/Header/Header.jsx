@@ -21,10 +21,6 @@ function Header() {
         <header className='flex-conteiner'>
             <h1>{typedText}</h1>
             <nav>
-             <a href="#profile">Home</a>
-             <a href="#projetos">Projetos</a>
-             <a href="#skills">Skills</a>
-             <a href="#contato">Contato</a>
              <a href="/curriculoGuilherme.pdf" className="curriculo" id="curriculo" target="_blank" rel="noopener noreferrer">Currículo</a>
             </nav>            
         </header>

@@ -11,27 +11,6 @@ body{
     color: white;
 }
 
-main {
-  padding-top: 80px; 
-}
-
-.conteudo {
-  display: flex;
-  flex-direction: column;
-  gap: 140px
-}
-
-.section {
-  min-height: 100vh;        
-  padding: 80px 20px;
-  margin-bottom: 120px;
-  scroll-margin-top: 80px;
-  box-sizing: border-box;
-}
-
-
-
-
 .skills {
   display: flex;
   flex-direction: column;
