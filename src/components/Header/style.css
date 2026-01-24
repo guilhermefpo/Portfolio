@@ -1,34 +1,75 @@
 .flex-conteiner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 15px;
-}  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
 
 .flex-conteiner > h1 {
-    background: linear-gradient(to right, blue, aqua);
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, blue, aqua);
+  background-clip: text;
+  color: transparent;
 }
 
 nav > a {
-    display: inline-block;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 3px;
-    margin-right: 12px;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 12px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 nav > a:hover {
-    scale: 105%;
+  transform: scale(1.05);
+  background-color: aqua;
 }
 
 .curriculo {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .flex-conteiner {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav > a {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-conteiner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > a {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  nav > a:hover {
+    transform: none;
+  }
 }

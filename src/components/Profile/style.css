@@ -1,4 +1,4 @@
-.perfil { 
+.perfil {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,29 +6,58 @@
   padding: 30vh;
 }
 
-
 .perfil > img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 .perfil > img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .perfil-texto {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .perfil-texto > h2 {
-    background: linear-gradient(to right, blue, aqua);
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, blue, aqua);
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .perfil {
+    gap: 20px;
+  }
+
+  .perfil > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+    padding: 8vh 6vw;
+  }
+
+  .perfil > img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .perfil > img:hover {
+    transform: none;
+  }
 }

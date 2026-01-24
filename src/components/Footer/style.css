@@ -7,35 +7,71 @@
   border: none;
   cursor: pointer;
   margin: 30px auto;
-  transition: scale 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .botao-contato:hover {
-  scale: 105%;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 footer {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
   padding: 20px;
 }
 
 .social-links {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   font-size: 28px;
-  transition: scale 2px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .social-links a {
-  color: #38bdf8;          
-
+  color: #38bdf8;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .social-links a:hover {
-    scale: 105%;
+  transform: scale(1.1);
+  color: #0ea5e9;
+}
+
+@media (max-width: 768px) {
+  .botao-contato {
+    margin: 24px auto;
+  }
+
+  .social-links {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .botao-contato {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .botao-contato:hover {
+    transform: none;
+  }
+
+  .social-links {
+    font-size: 24px;
+  }
+
+  .social-links a:hover {
+    transform: none;
+  }
 }

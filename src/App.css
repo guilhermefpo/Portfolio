@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0f0f0f; 
-    margin: 0px auto;
-    color: white;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f0f0f;
+  margin: 0px auto;
+  color: white;
 }
 
 .skills {
@@ -17,7 +17,6 @@ body{
   align-items: center;
   padding: 20px;
 }
-
 
 .skills > h2 {
   padding: 30px;
@@ -29,7 +28,6 @@ body{
   gap: 60px;
   flex-wrap: wrap;
 }
-
 
 .projetos {
   display: flex;
@@ -48,5 +46,30 @@ body{
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .skill-lista,
+  .projetos-lista {
+    gap: 30px;
+  }
 
-  
+  .skills > h2,
+  .projetos > h2 {
+    font-size: 1.8rem;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-lista,
+  .projetos-lista {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .skills > h2,
+  .projetos > h2 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+}
